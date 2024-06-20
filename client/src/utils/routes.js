@@ -1,4 +1,4 @@
-const server= "https://snapshare-backend-65cu.onrender.com";
+const server= "https://snapshare-backend-miyb.onrender.com";
 
 export const registerRoute=`${server}/api/v1/users/register`
 export const loginRoute=`${server}/api/v1/users/login`
