@@ -22,6 +22,7 @@ function getPublicIdFromCloudinaryUrl(url) {
 const generateAccessAndRefreshTokens=async(userId)=>{
     try {
         const user=await User.findById(userId);
+        console.log(user);
         if(!user)
         {
             throw new ApiError(404,"User not found");
