@@ -1,0 +1,120 @@
+.post {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.post-profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-user-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.post-username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post-timestamp {
+  color: #666;
+  font-size: 12px;
+}
+
+.post-options {
+  position: relative;
+}
+
+.post-options-icon {
+  cursor: pointer;
+}
+
+.post-menu {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.post-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  color:black;
+}
+
+.post-menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.post-menu-icon {
+  margin-right: 5px;
+}
+
+.post-content {
+  margin-bottom: 10px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.post-text {
+  font-size: 20px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.post-action-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.post-action-button .post-action-icon {
+  margin-right: 5px;
+}
+
+.post-action-button:hover {
+  color: var(--primary-color);
+}
+
+
+.liked{
+  color: orange !important;
+}

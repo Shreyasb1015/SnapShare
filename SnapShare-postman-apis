@@ -1,0 +1,523 @@
+{
+	"info": {
+		"_postman_id": "dea05546-c599-4308-bd82-680b29284fbc",
+		"name": "SnapShare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29633936",
+		"_collection_link": "https://shreyasteam.postman.co/workspace/ShreyasTeam-Workspace~035f6df6-bdbe-4bb8-a040-a9b01837a8d6/collection/29633936-dea05546-c599-4308-bd82-680b29284fbc?action=share&source=collection_link&creator=29633936"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"john546\",\r\n    \"password\":\"12345678\",\r\n    \"email\":\"john546@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/users/register",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"john456@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/users/login",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/users/logout",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProfile",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shreyas123@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "shreyas123",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/bagwe/OneDrive/Pictures/Saved Pictures/pic1.jpg",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/users/updateProfile",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users",
+								"updateProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"12345678\",\r\n    \"newPassword\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/users/changePassword",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"users",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "createPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "content",
+									"value": "Nature view!!!!",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/bagwe/OneDrive/Pictures/Saved Pictures/nature.jpg",
+									"disabled": true
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/bagwe/OneDrive/Pictures/Saved Pictures/nature-2.jpeg",
+									"disabled": true
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/bagwe/OneDrive/Pictures/Screenshots/Screenshot 2023-10-10 172008.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/posts/create-post",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts",
+								"create-post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUserPosts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/posts/myPosts",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts",
+								"myPosts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePost",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/posts/665a18c5147905a9caba51f7/delete",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts",
+								"665a18c5147905a9caba51f7",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePostDetails",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\":\"My first SnapShare Post\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/posts/665a1da16db81b9fcaa7819f/update",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts",
+								"665a1da16db81b9fcaa7819f",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePostPics",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/bagwe/Machine-learning/Deep-Learning/data augmentation/train/cat.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/posts/665a1da16db81b9fcaa7819f/update-photos",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts",
+								"665a1da16db81b9fcaa7819f",
+								"update-photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPosts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/posts/getAllPosts",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts",
+								"getAllPosts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comment",
+			"item": [
+				{
+					"name": "addComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\":\"This is second comment\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/comments/665c5eda0cbb21ef0ba5f5a7/addComment",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"comments",
+								"665c5eda0cbb21ef0ba5f5a7",
+								"addComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllComments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/comments/665c5eda0cbb21ef0ba5f5a7/getComments",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"comments",
+								"665c5eda0cbb21ef0ba5f5a7",
+								"getComments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteComment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/comments/665abd9a4a0505d2a20dbf7b/deleteComment",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"comments",
+								"665abd9a4a0505d2a20dbf7b",
+								"deleteComment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "like",
+			"item": [
+				{
+					"name": "addLike",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/likes/665a1da16db81b9fcaa7819f/addLike",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"likes",
+								"665a1da16db81b9fcaa7819f",
+								"addLike"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeLike",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/likes/665a1da16db81b9fcaa7819f/removeLike",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"likes",
+								"665a1da16db81b9fcaa7819f",
+								"removeLike"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Story",
+			"item": [
+				{
+					"name": "createStory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "content",
+									"value": "First story",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/bagwe/OneDrive/Pictures/Screenshots/Screenshot 2023-10-12 230911.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/stories/addstory",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"stories",
+								"addstory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserStories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/stories/mystories",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"stories",
+								"mystories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllStories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/stories/allstories",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"stories",
+								"allstories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteStory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/stories/665cc485e9e7700d4ccd6857/delete",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"stories",
+								"665cc485e9e7700d4ccd6857",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,16 @@
+import Login from './login/Login'
+import Register from './register/Register'
+import Welcome from './welcome/Welcome'
+import Navbar from './navbar/Navbar'
+import CreatePost from './createpost/CreatePost'
+import MyProfile from './myprofile/MyProfile'
+import Add from './add/Add'
+import UpdateProfile from './updateprofile/UpdateProfile'
+import AddPost from './addpost/AddPost'
+import AddStory from './addstory/AddStory'
+import AllStories from './allstories/AllStories'
+import ChangePassword from './changepassword/ChangePassword'
+import UpdatePost from './updatepost/UpdatePost'
+import Post from './post/Post'
+
+export { Login, Register,Welcome, Navbar,CreatePost,MyProfile,Add,UpdateProfile,AddPost,AddStory,AllStories,ChangePassword,UpdatePost,Post}

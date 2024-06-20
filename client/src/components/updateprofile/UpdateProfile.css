@@ -1,0 +1,73 @@
+/* UpdateProfile.css */
+.update-profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .update-profile-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px var(--primary-color);
+    width: 600px;
+    text-align: center;
+  }
+  
+  .update-profile-box h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .update-profile-box .update-form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .update-profile-box .update-form-icon {
+    margin-right: 0.5rem;
+    color: #ff5722;
+  }
+  
+  .update-profile-box input[type="text"],
+  .update-profile-box input[type="email"],
+  .update-profile-box input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .update-profile-box input[type="text"]:focus,
+  .update-profile-box input[type="email"]:focus,
+  .update-profile-box input[type="file"]:focus {
+    border-color: #ff5722;
+  }
+  
+  .update-profile-box .update-button {
+    background: #ff5722;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .update-profile-box .update-button .button-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .update-profile-box .update-button:hover {
+    background: #e64a19;
+  }
+  
